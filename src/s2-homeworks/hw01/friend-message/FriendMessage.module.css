@@ -1,0 +1,47 @@
+.friendMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 60px 50px;
+}
+
+.friendImageAndText {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.friendImageAndText img {
+    width: 50px;
+    height: 50px;
+}
+
+.friendText {
+    padding: 10px 7px 10px 15px;
+    width: 450px;
+    background: aliceblue;
+    border-radius: 10px
+}
+
+.friendText:after {
+
+}
+
+.friendName {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.friendMessageText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px
+}
+
+.friendTime {
+
+    font-size: 12px;
+    font-weight: bold
+}
+
