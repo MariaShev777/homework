@@ -1,23 +1,25 @@
 .sendForm {
-    padding: 35px 25px 0 45px;
-    width: 1000px;
+    padding: 12px 44px 0px 0px;
+    width: 2000px;
     /*height: 70px;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: baseline
+    align-items: baseline;
+    resize: none;
+    word-wrap: break-word;
 }
 
 .textarea {
     padding: 15px 40px;
     width: 976px;
     border: none;
-    resize: none;
     border-radius: 50px;
     background: aliceblue;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-
+    resize: none;
+    word-wrap: break-word;
 }
 
 .button {
@@ -28,9 +30,9 @@
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 50px;
-    margin: 10px 39px 10px 38px;
+    margin: 10px 39px 10px 44px;
     top: 500px;
-    left: 600px
+    left: 600px;
 }
 
 .button:hover {

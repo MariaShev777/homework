@@ -3,9 +3,17 @@
 }
 
 .hw {
-
+    margin-left: 70px;
 }
 
 .hwTitle {
-
+    font-size: 25px;
+    font-weight: bolder;
+    border-bottom: 1px solid lightgrey;
+    height: 45px;
+    margin-bottom: 40px;
+    width: 90%;
+    margin-left: 70px;
+    margin-top: 45px;
 }
+
