@@ -1,35 +1,90 @@
 .greetingForm {
+    /*flex-direction: row;*/
 }
 
 .inputAndButtonContainer {
+    flex-direction: row;
+    display: flex;
+    margin-top: 9px;
+    margin-bottom: 9px;
+
 }
 
 .error {
+    position: absolute;
+    color: red;
+    padding: 12px 44px 0px 0px;
 }
 
 .input {
+    /*display: block;*/
+    border-radius: 5px;
+    width: 372px;
+    height: 36px;
+    border-color: #D1D1D1;
+    padding-left: initial;
+
+
 }
 
 .input:focus {
+    border-radius: 5px;
+    width: 372px;
+    height: 36px;
+    border-color: grey;
+    padding: 12px 44px 0px 0px;
 }
 
 .errorInput {
+    display: flex;
+    border-radius: 5px;
+    width: 372px;
+    height: 36px;
+    border-color: red;
 }
 
 .button {
+    margin-left: 10px;
+    padding: 5px 24px 5px 24px;
+    border-radius: 3px;
+    background-color: #0066CC;
+    align-items: center;
+    font-size: 14px;
+    color: white;
 }
 
 .button:focus {
+
 }
 
 .button:active {
+    padding: 5px 24px 5px 24px;
+    margin-left: 10px;
+    background-color: #0066CC;
+    color: white;
+    /*align-items: center;*/
 }
 
 .button:disabled {
+    padding: 5px 24px 5px 24px;
+    margin-left: 10px;
+    /*align-items: center;*/
+    background-color: #0066CC;
+    opacity: 50%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: grey;
+    padding: 10px 15px 7px 0px;
+
 }
 
 .greeting {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+
 }
