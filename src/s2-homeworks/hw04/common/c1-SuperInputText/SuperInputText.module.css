@@ -2,7 +2,13 @@
 }
 
 .input {
+    width: 372px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    display: flex;
 }
+
 
 .inputWrapper {
 }
@@ -11,10 +17,14 @@
 }
 
 .errorInput {
+    border-color: red;
+    display: flex;
+
 }
 
 .errorInput:focus {
 }
 
 .error {
+    color: red;
 }

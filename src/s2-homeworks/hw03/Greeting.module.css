@@ -1,5 +1,6 @@
 .greetingForm {
     /*flex-direction: row;*/
+    margin-bottom: 100px;
 }
 
 .inputAndButtonContainer {
@@ -13,7 +14,7 @@
 .error {
     position: absolute;
     color: red;
-    padding: 12px 44px 0px 0px;
+    padding: 12px 44px 0 0
 }
 
 .input {
@@ -32,7 +33,7 @@
     width: 372px;
     height: 36px;
     border-color: grey;
-    padding: 12px 44px 0px 0px;
+    padding: 12px 44px 0 0;
 }
 
 .errorInput {
@@ -79,7 +80,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: grey;
-    padding: 10px 15px 7px 0px;
+    padding: 10px 15px 7px 0;
 
 }
 
