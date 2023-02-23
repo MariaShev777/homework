@@ -1,8 +1,9 @@
 .button {
-    padding: 5px 24px 5px 24px;
+    padding: 5px 0 5px 0;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    width: 100px;
 }
 
 .disabled {

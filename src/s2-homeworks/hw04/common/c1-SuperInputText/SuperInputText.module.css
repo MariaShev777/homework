@@ -1,4 +1,5 @@
 .input:focus {
+
 }
 
 .input {
@@ -8,6 +9,7 @@
     border: 1px solid grey;
     display: flex;
 }
+
 
 
 .inputWrapper {
@@ -23,8 +25,11 @@
 }
 
 .errorInput:focus {
+    border-color: red;
 }
 
 .error {
     color: red;
 }
+
+
