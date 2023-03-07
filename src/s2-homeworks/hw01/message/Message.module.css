@@ -1,22 +1,21 @@
 .message {
     display: flex;
-    position: absolute;
-    left: 672px;
-    top: 80px;
     flex-direction: column;
     align-items: flex-end;
-    margin: 30px 90px;
     word-wrap: break-word;
+    text-align: right;
+    margin-bottom: 30px;
+}
 
+.message .child {
+    margin: 0 auto;
+    width: 500px;
 }
 
 .imageAndText {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: flex-end;
-
-
 }
 
 .imageAndText img {
@@ -33,6 +32,7 @@
     margin-right: 10px;
     background: #0066CC;
     text-align: right;
+
 }
 
 .text:after {
