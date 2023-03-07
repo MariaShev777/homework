@@ -23,7 +23,11 @@
     width: 372px;
     height: 36px;
     border-color: #D1D1D1;
+<<<<<<< HEAD
     padding: 0 0 0 10px;
+=======
+    padding-left: initial;
+>>>>>>> refs/remotes/origin/main
 
 
 }
@@ -34,7 +38,10 @@
     height: 36px;
     border-color: grey;
     padding: 0 0 0 10px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .errorInput {

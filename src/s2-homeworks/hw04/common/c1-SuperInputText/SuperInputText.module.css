@@ -1,5 +1,8 @@
 .input:focus {
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .input {
@@ -11,7 +14,10 @@
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
 .inputWrapper {
 }
 
@@ -25,11 +31,17 @@
 }
 
 .errorInput:focus {
+<<<<<<< HEAD
     border-color: red;
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .error {
     color: red;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> refs/remotes/origin/main
