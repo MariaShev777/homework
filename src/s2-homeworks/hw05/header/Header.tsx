@@ -14,13 +14,21 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
     const currentPath = location.pathname
 
     const pageName =
+<<<<<<< HEAD
+        `${currentPath === PATH.PRE_JUNIOR
+=======
         currentPath === PATH.PRE_JUNIOR
+>>>>>>> refs/remotes/origin/main
             ? 'Pre-junior'
             : currentPath === PATH.JUNIOR
                 ? 'Junior'
                 : currentPath === PATH.JUNIOR_PLUS
                     ? 'Junior Plus'
+<<<<<<< HEAD
+                    : 'Error'}`
+=======
                     : 'Error'
+>>>>>>> refs/remotes/origin/main
     return (
         <>
             <div id={'hw5-header'} className={s.header}>

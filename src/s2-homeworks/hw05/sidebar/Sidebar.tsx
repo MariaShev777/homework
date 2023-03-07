@@ -12,8 +12,15 @@ type PropsType = {
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
     const sidebarClass = s.sidebar
         + (open ? ' ' + s.open : '')
+<<<<<<< HEAD
+
     return (
         <>
+
+=======
+    return (
+        <>
+>>>>>>> refs/remotes/origin/main
             {/*затемнение справа от открытого меню*/}
             {open && <div className={s.background} onClick={handleClose}/>}
 
@@ -31,7 +38,12 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
+<<<<<<< HEAD
+                        className={({isActive}) => isActive ? s.active : ''} // делает студент
+                        end
+=======
                         // className={...} // делает студент
+>>>>>>> refs/remotes/origin/main
                     >
                         Pre-junior
                     </NavLink>
@@ -39,7 +51,12 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
                         onClick={handleClose}
+<<<<<<< HEAD
+                        className={({isActive}) => isActive ? s.active : ''}
+                        end
+=======
                         // className={...} // делает студент
+>>>>>>> refs/remotes/origin/main
                     >
                         Junior
                     </NavLink>
@@ -47,7 +64,11 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
+<<<<<<< HEAD
+                        className={({isActive}) => isActive ? s.active : ''}
+=======
                         // className={...} // делает студент
+>>>>>>> refs/remotes/origin/main
                     >
                         Junior Plus
                     </NavLink>

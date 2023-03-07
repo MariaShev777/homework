@@ -1,9 +1,17 @@
 .App {
     --header_height: 60px;
+<<<<<<< HEAD
+    margin-top: 80px;
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .hw {
     margin-left: 70px;
+<<<<<<< HEAD
+    margin-top: 10px;
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .hwTitle {

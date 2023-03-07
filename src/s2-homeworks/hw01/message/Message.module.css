@@ -1,5 +1,17 @@
 .message {
     display: flex;
+<<<<<<< HEAD
+    flex-direction: column;
+    align-items: flex-end;
+    word-wrap: break-word;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.message .child {
+    margin: 0 auto;
+    width: 500px;
+=======
     position: absolute;
     left: 672px;
     top: 80px;
@@ -8,15 +20,20 @@
     margin: 30px 90px;
     word-wrap: break-word;
 
+>>>>>>> refs/remotes/origin/main
 }
 
 .imageAndText {
     display: flex;
     flex-direction: row-reverse;
+<<<<<<< HEAD
+    align-items: flex-end;
+=======
     justify-content: flex-end;
     align-items: flex-end;
 
 
+>>>>>>> refs/remotes/origin/main
 }
 
 .imageAndText img {
@@ -33,6 +50,10 @@
     margin-right: 10px;
     background: #0066CC;
     text-align: right;
+<<<<<<< HEAD
+
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
 .text:after {

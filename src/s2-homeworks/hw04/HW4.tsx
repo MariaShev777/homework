@@ -1,7 +1,10 @@
 import React from 'react'
 import s2 from '../../s1-main/App.module.css'
 import Stand from './Stand'
+<<<<<<< HEAD
 import SuperButton from "./common/c2-SuperButton/SuperButton";
+=======
+>>>>>>> refs/remotes/origin/main
 
 /*
      * 1 - понять (и простить) SuperInputText ++
@@ -14,6 +17,10 @@ const HW4 = () => {
     return (
         <div id={'hw4'}>
             <div className={s2.hwTitle}>Homework №4</div>
+<<<<<<< HEAD
+=======
+            {/*демонстрация возможностей компонент:*/}
+>>>>>>> refs/remotes/origin/main
             <div className={s2.hw}>
                 <Stand />
             </div>
