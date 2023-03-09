@@ -6,6 +6,7 @@ import HW3 from "../s2-homeworks/hw03/HW3";
 import HW4 from "../s2-homeworks/hw04/HW4";
 
 import HW5 from "../s2-homeworks/hw05/HW5";
+import HW6 from "../s2-homeworks/hw06/HW6";
 
 
 
