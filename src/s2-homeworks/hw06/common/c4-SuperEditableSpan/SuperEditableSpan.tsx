@@ -44,6 +44,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
         // выключить editMode при нажатии Enter // делают студенты
         setEditMode(!editMode);
         onEnter?.()
+
     }
 
     const onBlurCallback = (e: React.FocusEvent<HTMLInputElement>) => {
