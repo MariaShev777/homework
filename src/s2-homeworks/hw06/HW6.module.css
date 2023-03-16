@@ -1,5 +1,15 @@
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    /*font-family: 'Montserrat', sans-serif;*/
+
 }
 
 .editableSpanContainer {
+    height: 35px;
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
