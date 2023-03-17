@@ -4,6 +4,7 @@
     align-items: center;
 }
 
+
 .span {
     font-size: 16px;
     line-height: 20px;
@@ -11,7 +12,7 @@
 }
 
 .input {
-
+    border-color: #D1D1D1;
 }
 
 .pen {
