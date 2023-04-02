@@ -8,15 +8,29 @@
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: unset;
+    width: 606px;
+    gap: 7px;
 }
 
 .container {
 }
 
 .thead {
+    display: flex;
+    padding-top: 4px;
+    padding-left: 17px;
+    margin-top: 18px;
+    font-weight: bolder;
+    width: 606px;
+    height: 36px;
+    background-color: #E5E5E5;
 }
 
 .nameCol {
+    padding-right: 218px;
 }
 
 .ageCol {
