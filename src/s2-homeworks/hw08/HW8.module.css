@@ -1,10 +1,19 @@
 .item {
+    display: flex;
+    padding-left: 17px;
+    text-align: start;
+    font-size: 15px;
+    line-height: 45px;
+    border-bottom: 1px solid #E5E5E5;
+    font-style: normal;
+
 }
 
 .item:last-of-type {
 }
 
 .users {
+
 }
 
 .buttonsContainer {
@@ -12,7 +21,7 @@
     justify-content: flex-end;
     flex-flow: unset;
     width: 606px;
-    gap: 7px;
+    gap: 9px;
 }
 
 .container {
@@ -21,17 +30,20 @@
 .thead {
     display: flex;
     padding-top: 4px;
-    padding-left: 17px;
+    padding-left: 15px;
     margin-top: 18px;
     font-weight: bolder;
     width: 606px;
     height: 36px;
     background-color: #E5E5E5;
+    align-items: flex-start;
 }
 
 .nameCol {
-    padding-right: 218px;
+    width: 350px;
+    padding-right: 10px;
 }
 
 .ageCol {
+
 }
