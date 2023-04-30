@@ -12,19 +12,23 @@ function Clock() {
     const start = () => {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
-        setDate()
+        const id = +setInterval(() => {
+            setDate(new Date())
+        }, 1000)
+        setTimerId(id)
     }
 
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
-
+        clearInterval(timerId)
+        setTimerId(undefined)
     }
 
     const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
-        setShow(!show)
+        setShow(true)
     }
     const onMouseLeave = () => { // пишут студенты // спрятать дату если мышка не наведена
-        setShow(!show)
+        setShow(false)
     }
 
     const stringTime = date.toLocaleString('ru', {hour: 'numeric', minute: 'numeric', second: 'numeric'}) || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
@@ -67,15 +71,15 @@ function Clock() {
                 <SuperButton
                     xType='default'
                     id={'hw9-button-start'}
-                    disabled={false} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={!!timerId} // пишут студенты // задизэйблить если таймер запущен
                     onClick={start}
                 >
                     Start
                 </SuperButton>
                 <SuperButton
-                    // xType='hw9'
+                    xType='default'
                     id={'hw9-button-stop'}
-                    disabled={true} // пишут студенты // задизэйблить если таймер не запущен
+                    disabled={!timerId} // пишут студенты // задизэйблить если таймер не запущен
                     onClick={stop}
                 >
                     Stop
