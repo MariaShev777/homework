@@ -19,9 +19,11 @@ function HW11() {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
     }
 
+
     return (
+
         <div id={'hw11'}>
-            <div className={s2.hwTitle}>Homework #11</div>
+            <div className={s2.hwTitle}>Homework №11</div>
 
             <div className={s2.hw}>
                 <div className={s.container}>

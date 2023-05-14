@@ -2,7 +2,14 @@
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    align-items: center;
+
 }
 
 .number {
+    font-size: 17px;
+    font-weight: 600;
 }
