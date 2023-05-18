@@ -20,20 +20,20 @@ type ThemesType = {
 
 
 const themes:ThemesType[] = [
-    {id: 1, value: 'Light'},
-    {id: 2, value: 'Blue'},
-    {id: 3, value: 'Dark'},
+    {id: 1, value: 'light'},
+    {id: 2, value: 'blue'},
+    {id: 3, value: 'dark'},
 ]
 
 const HW12 = () => {
     // взять ид темы из редакса
-    let themeId = useSelector<AppStoreType, number>(state => state.theme.themeId)
+    const themeId = useSelector<AppStoreType, number>(state => state.theme.themeId)
 
 
     const dispatch = useDispatch()
 
     const change = (id: number) => { // дописать функцию
-        dispatch(changeThemeId(id))
+        dispatch(changeThemeId(Number(id)))
     }
 
     useEffect(() => {
