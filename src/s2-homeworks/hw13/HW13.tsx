@@ -10,8 +10,8 @@ import errorUnknown from './images/error.svg'
 
 /*
 * 1 - дописать функцию send
-* 2 - дизэйблить кнопки пока идёт запрос
-* 3 - сделать стили в соответствии с дизайном
+      * 2 - дизэйблить кнопки пока идёт запрос
+      * 3 - сделать стили в соответствии с дизайном
 * */
 
 const HW13 = () => {
@@ -24,47 +24,54 @@ const HW13 = () => {
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+                : 'https://samurai.it-incubator.io/api/3.0/homework/test'
 
         setCode('')
         setImage('')
         setText('')
         setInfo('...loading')
-
+        // e.response?.data?.info
         axios
             .post(url, {success: x})
             .then((res) => {
-                setCode('Код 200!')
+                setInfo("")
+                setCode("Код 200!")
                 setImage(success200)
-                // дописать
-
+                setText(res.data.errorText)
             })
             .catch((e) => {
                 // дописать
-
+                    setInfo("")
+                    setCode(e.response.status === 500 ? 'Ошибка 500!' : e.response.status === 400 ? 'Ошибка 400!' : 'Error!')
+                    setImage(e.response.status === 500 ? error500 : e.response.status === 400 ? error400 : errorUnknown)
+                    setText(e.response?.data?.info || e.message)
             })
     }
 
     return (
         <div id={'hw13'}>
-            <div className={s2.hwTitle}>Homework #13</div>
+            <div className={s2.hwTitle}>Homework №13</div>
 
             <div className={s2.hw}>
                 <div className={s.buttonsContainer}>
+
                     <SuperButton
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send true
                     </SuperButton>
+
                     <SuperButton
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send false
@@ -74,6 +81,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send undefined
@@ -83,6 +91,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
+                        disabled={info === '...loading'}
 
                     >
                         Send null
