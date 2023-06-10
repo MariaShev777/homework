@@ -94,7 +94,7 @@ const HW13 = () => {
                         disabled={info === '...loading'}
 
                     >
-                        Send null
+                        Send nullnull
                     </SuperButton>
                 </div>
 
