@@ -3,4 +3,6 @@
     margin-left: 30px;
     margin-top: -10px;
     margin-bottom: -12px;
+    display: inline-block;
+    box-sizing: border-box;
 }
