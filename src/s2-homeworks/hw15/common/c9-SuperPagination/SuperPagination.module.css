@@ -1,0 +1,11 @@
+.pagination {
+    display: flex;
+}
+
+.text1 {
+    padding: 0 7px 0 25px;
+}
+
+.text2 {
+    padding: 0 0 0 7px;
+}
