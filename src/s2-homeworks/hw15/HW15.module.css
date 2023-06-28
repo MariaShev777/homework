@@ -25,3 +25,10 @@
 .loading {
 
 }
+
+.icon {
+    width: 12px;
+    height: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}

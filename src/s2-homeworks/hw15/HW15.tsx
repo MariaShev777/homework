@@ -42,20 +42,20 @@ const HW15 = () => {
     const [sort, setSort] = useState('')
     const [page, setPage] = useState(1)
     const [count, setCount] = useState(4)
-    const [idLoading, setLoading] = useState(false)
+    const [idLoading, setLoading] = useState(true)
     const [totalCount, setTotalCount] = useState(100)
-    const [searchParams, setSearchParams] = useSearchParams()
+    const [searchParams, setSearchParams] = useSearchParams(`?page=1&count=4`)
     const [techs, setTechs] = useState<TechType[]>([])
 
-    const sendQuery = (params: any) => {
+    const sendQuery = (params: ParamsType) => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
                 // делает студент
+                setLoading(false)
                 if (res) {
                     setTechs(res.data.techs)
                     setTotalCount(res.data.totalCount)
-                    setLoading(false)
                 }
             })
     }
@@ -79,7 +79,7 @@ const HW15 = () => {
         // setPage(1) // при сортировке сбрасывать на 1 страницу
         setPage(1)
 
-        sendQuery({sort: newSort, page, count})
+        sendQuery({page, count, sort: newSort})
         setSearchParams({page: page.toString(), count: count.toString()})
 
         //
@@ -87,10 +87,10 @@ const HW15 = () => {
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        sendQuery({page: params.page, count: params.count})
+        sendQuery({page: +params.page, count: +params.count, sort})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
-    }, [])
+    }, [searchParams, sort])
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
@@ -108,7 +108,7 @@ const HW15 = () => {
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Homework №15</div>
 
-            <div className={s2.hw}>
+            <div className={s2.hw} style={{paddingBottom:'80px'}}>
                 {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
 
                 <SuperPagination

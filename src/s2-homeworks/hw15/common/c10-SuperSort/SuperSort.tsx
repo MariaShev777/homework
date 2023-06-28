@@ -2,6 +2,7 @@ import React from 'react'
 import iconDown from './../iconDown.png';
 import iconUp from './../iconUp.png';
 import none from './../none.png';
+import s from './../../HW15.module.css';
 
 // добавить в проект иконки и импортировать
 const downIcon = iconDown
@@ -51,7 +52,7 @@ const SuperSort: React.FC<SuperSortPropsType> = (
             id={id + '-sort-' + value}
             onClick={onChangeCallback}
         >
-               <img width={'10px'}
+               <img className={s.icon}
                     id={id + '-icon-' + sort}
                     src={icon}
                />
